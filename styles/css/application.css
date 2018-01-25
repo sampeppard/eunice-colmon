@@ -22,6 +22,9 @@ ul {
   padding: 20px;
   border-radius: 5px;
   background-color: #f3f3f3; }
+  .content-item h5 {
+    text-align: center;
+    text-decoration: underline; }
 
 header {
   position: fixed;
@@ -47,19 +50,43 @@ header {
 
 .navbar {
   -webkit-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  width: 100%;
+  font-family: 'Roboto Slab', serif; }
   .navbar ul {
     -webkit-padding-start: 0; }
   .navbar a:hover, .navbar a:active {
     color: #fff;
     text-decoration: underline; }
-  @media screen and (min-width: 575px) {
+  .navbar .navbar-nav {
+    width: 100%; }
+  .navbar .nav-item {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    text-align: center; }
+  @media screen and (min-width: 769px) {
     .navbar {
       -webkit-flex-direction: row;
-      flex-direction: row; } }
+      flex-direction: row;
+      font-size: 14px; } }
 
 .navbar-brand {
-  font-family: 'Roboto Slab', serif; }
+  font-family: 'Roboto Slab', serif;
+  margin-right: 0; }
+  @media screen and (min-width: 769px) {
+    .navbar-brand {
+      margin-right: 1rem; } }
+
+a.dropdown-item:hover {
+  color: #333; }
+
+.dropdown-toggle::after {
+  display: block;
+  margin: 0 auto; }
 
 .header-contact {
   display: none;
@@ -74,11 +101,25 @@ header {
       display: block; } }
 
 .slider {
-  margin-top: 40px; }
+  margin-top: 390px; }
   .slider .carousel-caption h3 {
-    font-size: 80px;
+    font-size: 40px;
     font-family: 'Roboto Slab', serif;
-    color: #000; }
+    color: #fff; }
+  .slider .carousel-item img {
+    width: 100%; }
+  .slider .slider-image {
+    display: none; }
+  @media screen and (min-width: 576px) {
+    .slider {
+      margin-top: 40px; }
+      .slider .carousel-caption h3 {
+        font-size: 80px; } }
+  @media screen and (min-width: 768px) {
+    .slider .slider-image {
+      display: block; }
+    .slider .slider-image-mobile {
+      display: none; } }
 
 footer {
   width: 100%;
