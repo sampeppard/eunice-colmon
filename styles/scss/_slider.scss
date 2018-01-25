@@ -1,11 +1,41 @@
 .slider {
-    margin-top: 40px;
+    margin-top: 390px;
 
     .carousel-caption {
         h3 {
-            font-size: 80px;
+            font-size: 40px;
             font-family: 'Roboto Slab', serif;
-            color: $black;
+            color: $white;
+        }
+    }
+
+    .carousel-item {
+        img {
+            width: 100%;
+        }
+    }
+
+    .slider-image {
+        display: none;
+    }
+
+    @media screen and (min-width: 576px) {
+        margin-top: 40px;
+
+        .carousel-caption {
+            h3 {
+                font-size: 80px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .slider-image {
+            display: block;
+        }
+
+        .slider-image-mobile {
+            display: none;
         }
     }
 }
