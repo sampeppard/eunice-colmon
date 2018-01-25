@@ -1,7 +1,20 @@
 .content {
     width: 100%;
     margin: 80px auto 40px;
+
+    &--small-margin {
+        margin-top: 435px;
+    
+        @media screen and (min-width: 575px) {
+            margin-top: 165px;
+        }
+    
+        @media screen and (min-width: 769px) {
+            margin-top: 125px;
+        }
+    }
 }
+
 
 .row {
     -webkit-justify-content: space-between;
