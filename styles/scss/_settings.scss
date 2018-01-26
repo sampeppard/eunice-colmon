@@ -1,9 +1,14 @@
 body {
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 ul {
     list-style-type: none;
     padding: 0;
+}
+
+.list-group-item--custom {
+    list-style: disc;
+    margin-left: 20px;
 }

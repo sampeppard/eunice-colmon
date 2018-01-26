@@ -27,13 +27,14 @@
     }
 }
 
-.content-item {
+.card {
     padding: 20px;
-    border-radius: 5px;
-    background-color: #f3f3f3;
+    color: $white;
 
-    h5 {
-        text-align: center;
+    .card-title {
+        font-size: 21px;
         text-decoration: underline;
+        text-align: center;
     }
 }
+
