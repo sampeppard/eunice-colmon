@@ -12,7 +12,7 @@ ul {
 
 .content {
   width: 100%;
-  margin: 80px auto 40px; }
+  margin: 80px auto 80px; }
   .content--small-margin {
     margin-top: 435px; }
     @media screen and (min-width: 575px) {
