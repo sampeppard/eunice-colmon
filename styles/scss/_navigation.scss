@@ -22,12 +22,18 @@ header {
     max-width: 1440px;
     display: flex;
     display: -webkit-flex;
-    -webkit-flex-direction: row;
-    flex-direction: row;
+    -webkit-flex-direction: column;
+    flex-direction: column;
     justify-content: space-between;
     -webkit-justify-content: space-between;
     margin: 0 auto;
     color: $white;
+    text-align: center;
+
+    @media screen and (min-width: 576px) {
+        -webkit-flex-direction: row;
+        flex-direction: row;
+    }
 }
 
 .navbar {
@@ -43,7 +49,7 @@ header {
     a {
         &:hover, &:active {
             color: $white;
-            text-decoration: underline;
+            
         }
     }
 
@@ -68,6 +74,13 @@ header {
     }
 }
 
+.navbar-expand-sm .navbar-nav {
+    @media screen and (min-width: 576px) {
+        justify-content: space-around;
+        -webkit-justify-content: space-around;
+    }
+}
+
 .navbar-brand {
     margin-right: 0;
     font-family: 'Roboto Slab', serif;
@@ -89,7 +102,6 @@ a.dropdown-item {
 }
 
 .header-contact {
-    display: none;
     margin: 24px 0;
     font-size: 16px;
     font-family: 'Roboto Slab', serif;
@@ -100,9 +112,5 @@ a.dropdown-item {
         &:hover {
             color: $white;
         }
-    }
-
-    @media screen and (min-width: 768px) {
-        display: block;
     }
 }
