@@ -12,7 +12,10 @@ ul {
 
 .content {
   width: 100%;
-  margin: 80px auto 80px; }
+  margin: 0px auto 80px; }
+  @media screen and (min-width: 575px) {
+    .content {
+      margin-top: 80px; } }
   @media screen and (min-width: 575px) {
     .content--small-margin {
       margin-top: 165px; } }
@@ -31,6 +34,8 @@ ul {
 .card {
   padding: 20px;
   color: #fff; }
+  .card a {
+    color: #fff; }
   .card .card-title {
     font-size: 21px;
     text-align: center; }
@@ -39,7 +44,7 @@ header {
   position: none;
   top: 0;
   width: 100%;
-  background-color: #0b5300;
+  background-color: #fff;
   z-index: 1000; }
   header a {
     color: #fff; }
@@ -47,7 +52,8 @@ header {
     border-radius: 0; }
   @media screen and (min-width: 576px) {
     header {
-      position: fixed; } }
+      position: fixed;
+      background-color: #0b5300; } }
 
 .navigation {
   max-width: 1440px;
@@ -60,6 +66,12 @@ header {
   margin: 0 auto;
   color: #fff;
   text-align: center; }
+  .navigation--desktop {
+    display: none; }
+    @media screen and (min-width: 576px) {
+      .navigation--desktop {
+        display: flex;
+        display: -webkit-flex; } }
   @media screen and (min-width: 576px) {
     .navigation {
       -webkit-flex-direction: row;
@@ -117,6 +129,12 @@ a.dropdown-item:hover {
     padding: 0 10px; }
     .header-contact a:hover {
       color: #fff; }
+
+.navigation--mobile {
+  color: #fff; }
+  @media screen and (min-width: 576px) {
+    .navigation--mobile {
+      display: none; } }
 
 .slider {
   margin-top: 0; }
