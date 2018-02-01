@@ -1,6 +1,10 @@
 .content {
     width: 100%;
-    margin: 80px auto 80px;
+    margin: 0px auto 80px;
+
+    @media screen and (min-width: 575px) {
+        margin-top: 80px;
+    }
 
     &--small-margin {
     
@@ -30,10 +34,14 @@
     padding: 20px;
     color: $white;
 
+    a {
+        color: $white;
+    }
+    
     .card-title {
         font-size: 21px;
-        
         text-align: center;
+
     }
 }
 
