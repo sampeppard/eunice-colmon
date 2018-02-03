@@ -10,6 +10,9 @@ ul {
   list-style: disc;
   margin-left: 20px; }
 
+.padding {
+  padding: 40px; }
+
 .content {
   width: 100%;
   margin: 0px auto 80px; }
