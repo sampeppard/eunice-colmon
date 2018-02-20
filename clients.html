@@ -17,10 +17,158 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.8.0/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+                $('.customer-logos').slick({
+                    slidesToShow: 6,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 1500,
+                    arrows: false,
+                    dots: false,
+                    pauseOnHover: false,
+                    responsive: [{
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 4
+                        }
+                    }, {
+                        breakpoint: 520,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    }]
+                });
+            });
+    </script>
 </head>
+
+<style>
+    h2 {
+        text-align:center;
+        padding: 20px;
+    }
+    /* Slider */
+
+    .slick-slide {
+        margin: 0px 20px;
+    }
+
+    .slick-slide img {
+        width: 100%;
+    }
+
+    .slick-slider
+    {
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+                user-select: none;
+        -webkit-touch-callout: none;
+        -khtml-user-select: none;
+        -ms-touch-action: pan-y;
+            touch-action: pan-y;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .slick-list
+    {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    .slick-list:focus
+    {
+        outline: none;
+    }
+    .slick-list.dragging
+    {
+        cursor: pointer;
+        cursor: hand;
+    }
+
+    .slick-slider .slick-track,
+    .slick-slider .slick-list
+    {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0);
+            -o-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+    }
+
+    .slick-track
+    {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+    }
+    .slick-track:before,
+    .slick-track:after
+    {
+        display: table;
+        content: '';
+    }
+    .slick-track:after
+    {
+        clear: both;
+    }
+    .slick-loading .slick-track
+    {
+        visibility: hidden;
+    }
+
+    .slick-slide
+    {
+        display: none;
+        float: left;
+        height: 100%;
+        min-height: 1px;
+    }
+    [dir='rtl'] .slick-slide
+    {
+        float: right;
+    }
+    .slick-slide img
+    {
+        display: block;
+    }
+    .slick-slide.slick-loading img
+    {
+        display: none;
+    }
+    .slick-slide.dragging img
+    {
+        pointer-events: none;
+    }
+    .slick-initialized .slick-slide
+    {
+        display: block;
+    }
+    .slick-loading .slick-slide
+    {
+        visibility: hidden;
+    }
+    .slick-vertical .slick-slide
+    {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+    .slick-arrow.slick-hidden {
+        display: none;
+    }
+</style>
 
 <body>
     <header>
@@ -174,138 +322,173 @@
             technology, telecommunications, healthcare, insurance, logistics, and manufacturing.
             <br>
             <br>
-            <div class="your-class">
-                <div>your content</div>
-                <div>your content</div>
-                <div>your content</div>
+            <div class="container">
+                <h2>Clients</h2>
+                <section class="customer-logos slider">
+                    <div class="slide">
+                        <img src="img/americanCancer.png">
+                    </div>
+                    <div class="slide">
+                        <img src="img/chubb+800.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="img/DOHMH.png">
+                    </div>
+                    <div class="slide">
+                        <img src="img/iac.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="img/eunice_image.png">
+                    </div>
+                    <div class="slide">
+                        <img src="img/integrity.png">
+                    </div>
+                    <div class="slide">
+                        <img src="img/LHH.png">
+                    </div>
+                    <div class="slide">
+                        <img src="img/Marsh.png">
+                    </div>
+                    <div class="slide">
+                        <img src="img/MB.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="img/UMC.png">
+                    </div>
+                </section>
             </div>
             <br>
             <br>
-            <h5 class="text-center">
-                Corporate
-            </h5>
-            <br>
-            <br>
-            <div class="row">
-                <div class="col-md-4">
-                    <ul class="list-group">
-                        <li class="list-group-item--custom">Merrill Lynch</li>
-                        <li class="list-group-item--custom">Wakefern</li>
-                        <li class="list-group-item--custom">DuPont</li>
-                        <li class="list-group-item--custom">AT&T</li>
-                        <li class="list-group-item--custom">Toys R Us</li>
-                        <li class="list-group-item--custom">IBM</li>
-                        <li class="list-group-item--custom">SWK Technologies</li>
-                    </ul>
+            <div class="container" style="background: url('img/newyork.jpg'); color: white; padding: 15px; border-radius: 10px;">
+                <h5 class="text-center">
+                    Corporate
+                </h5>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <ul class="list-group">
+                            <li class="list-group-item--custom">Merrill Lynch</li>
+                            <li class="list-group-item--custom">Wakefern</li>
+                            <li class="list-group-item--custom">DuPont</li>
+                            <li class="list-group-item--custom">AT&T</li>
+                            <li class="list-group-item--custom">Toys R Us</li>
+                            <li class="list-group-item--custom">IBM</li>
+                            <li class="list-group-item--custom">SWK Technologies</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-group">
+                            <li class="list-group-item--custom">Janssen Pharmaceutical</li>
+                            <li class="list-group-item--custom">Aventis</li>
+                            <li class="list-group-item--custom">Quest Diagnostics</li>
+                            <li class="list-group-item--custom">St. Barnabas Hospital</li>
+                            <li class="list-group-item--custom">Chubb Insurance</li>
+                            <li class="list-group-item--custom">Almetek Industries</li>
+                            <li class="list-group-item--custom">Bombardier</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-group">
+                            <li class="list-group-item--custom">Lee Hecht Harrison</li>
+                            <li class="list-group-item--custom">Bulbrite Industries</li>
+                            <li class="list-group-item--custom">Mack Boring & Parts Co.</li>
+                            <li class="list-group-item--custom">Kuehne & Nagel</li>
+                            <li class="list-group-item--custom">Cartridge Actuated Devices</li>
+                            <li class="list-group-item--custom">MJHS Foundation</li>
+                            <li class="list-group-item--custom">Marsh and McLennan</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <ul class="list-group">
-                        <li class="list-group-item--custom">Janssen Pharmaceutical</li>
-                        <li class="list-group-item--custom">Aventis</li>
-                        <li class="list-group-item--custom">Quest Diagnostics</li>
-                        <li class="list-group-item--custom">St. Barnabas Hospital</li>
-                        <li class="list-group-item--custom">Chubb Insurance</li>
-                        <li class="list-group-item--custom">Almetek Industries</li>
-                        <li class="list-group-item--custom">Bombardier</li>
-                    </ul>
+                <br>
+                <br>
+                <h5 class="text-center">
+                    Government
+                </h5>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <ul class="list-group">
+                            <li class="list-group-item--custom">State Of New Jersey</li>
+                            <li class="list-group-item--custom">Newark Housing Authority</li>
+                            <li class="list-group-item--custom">County of Somerset</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-group">
+                            <li class="list-group-item--custom">Salem County, NJ</li>
+                            <li class="list-group-item--custom">DOHMH-City of New York</li>
+                            <li class="list-group-item--custom">EPA-Cincinnati</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-group">
+                            <li class="list-group-item--custom">National Transit Institute</li>
+                            <li class="list-group-item--custom">USDA, The Graduate School</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <ul class="list-group">
-                        <li class="list-group-item--custom">Lee Hecht Harrison</li>
-                        <li class="list-group-item--custom">Bulbrite Industries</li>
-                        <li class="list-group-item--custom">Mack Boring & Parts Co.</li>
-                        <li class="list-group-item--custom">Kuehne & Nagel</li>
-                        <li class="list-group-item--custom">Cartridge Actuated Devices</li>
-                        <li class="list-group-item--custom">MJHS Foundation</li>
-                        <li class="list-group-item--custom">Marsh and McLennan</li>
-                    </ul>
+                <br>
+                <br>
+                <h5 class="text-center">
+                    Non-Profit/Educational Institutions
+                </h5>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <ul class="list-group">
+                            <li class="list-group-item--custom">InterAgency Council on Developmental Disabilities, Inc.</li>
+                            <li class="list-group-item--custom">American Cancer Society</li>
+                            <li class="list-group-item--custom">YMCA of Ridgewood</li>
+                            <li class="list-group-item--custom">Integrity House</li>
+                            <li class="list-group-item--custom">LADACIN Network</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-group">
+                            <li class="list-group-item--custom">United Methodist Communities</li>
+                            <li class="list-group-item--custom">John A. Hartfort Foundation</li>
+                            <li class="list-group-item--custom">Fairleigh Dickinson University</li>
+                            <li class="list-group-item--custom">Rutgers University School of Social Work</li>
+                            <li class="list-group-item--custom">Rutgers University Government Services</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-group">
+                            <li class="list-group-item--custom">Seth Boyden</li>
+                            <li class="list-group-item--custom">Catonsville Community</li>
+                            <li class="list-group-item--custom">Catholic Charities</li>
+                            <li class="list-group-item--custom">Lower East Service</li>
+                            <li class="list-group-item--custom">North Hudson Community Act Corp</li>
+                        </ul>
+                    </div>
                 </div>
+                <br>
+                <br>
+                <h5 class="text-center">
+                    Conferences
+                </h5>
+                <br>
+                <br>
+                <ul class="list-group">
+                    <li class="list-group-item--custom">Sino-American Pharmaceutical Professionals Association, Princeton University, NJ</li>
+                    <li class="list-group-item--custom">Merrill Lynch Affinity Best Practices, Hopewell, NJ</li>
+                    <li class="list-group-item--custom">Lower East Service Center, New York, NY</li>
+                    <li class="list-group-item--custom">Federally Employed Women National Annual Training, Anaheim, CA and Washington D. C.</li>
+                    <li class="list-group-item--custom">Residential Seminar for the Administrative Professional, Ocean City, MD</li>
+                    <li class="list-group-item--custom">NJ Annual Public Purchasing Conference, Atlantic City, NJ</li>
+                    <li class="list-group-item--custom">MD Education Opportunity, Baltimore, MD</li>
+                </ul>
+                <br>
+                <br>
+                <p>
+                    Eunice enjoys every opportunity to help organizations develop competent, reliable managers and powerhouse teams driven by
+                    vision, mission, and purpose. She looks forward to continuing her trusted partnerships and sparking new collaborations focused
+                    on inspiration and excellence.
+                </p>
             </div>
-            <br>
-            <br>
-            <h5 class="text-center">
-                Government
-            </h5>
-            <br>
-            <br>
-            <div class="row">
-                <div class="col-md-4">
-                    <ul class="list-group">
-                        <li class="list-group-item--custom">State Of New Jersey</li>
-                        <li class="list-group-item--custom">Newark Housing Authority</li>
-                        <li class="list-group-item--custom">County of Somerset</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-group">
-                        <li class="list-group-item--custom">Salem County, NJ</li>
-                        <li class="list-group-item--custom">DOHMH-City of New York</li>
-                        <li class="list-group-item--custom">EPA-Cincinnati</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-group">
-                        <li class="list-group-item--custom">National Transit Institute</li>
-                        <li class="list-group-item--custom">USDA, The Graduate School</li>
-                    </ul>
-                </div>
-            </div>
-            <br>
-            <br>
-            <h5 class="text-center">
-                Non-Profit/Educational Institutions
-            </h5>
-            <br>
-            <br>
-            <div class="row">
-                <div class="col-md-5">
-                    <ul class="list-group">
-                        <li class="list-group-item--custom"> InterAgency Council on Developmental Disabilities, Inc.</li>
-                        <li class="list-group-item--custom">American Cancer Society</li>
-                        <li class="list-group-item--custom">YMCA of Ridgewood</li>
-                        <li class="list-group-item--custom">Integrity House</li>
-                        <li class="list-group-item--custom">LADACIN Network</li>
-                        <li class="list-group-item--custom">Community Builders</li>
-                        <li class="list-group-item--custom">Greater NJ United Methodist Conference</li>
-                        <li class="list-group-item--custom">John A. Hartfort Foundation</li>
-                    </ul>
-                </div>
-                <div class="col-md-5">
-                    <ul class="list-group">
-                        <li class="list-group-item--custom">Fairleigh Dickinson University</li>
-                        <li class="list-group-item--custom">Rutgers University School of Social Work</li>
-                        <li class="list-group-item--custom">Rutgers University Government Services</li>
-                        <li class="list-group-item--custom">Seth Boyden</li>
-                        <li class="list-group-item--custom">Catonsville Community</li>
-                        <li class="list-group-item--custom">Catholic Charities</li>
-                        <li class="list-group-item--custom">Lower East Service</li>
-                        <li class="list-group-item--custom">North Hudson Community Act Corp</li>
-                    </ul>
-                </div>
-            </div>
-            <br>
-            <br>
-            <h5 class="text-center">
-                Conferences
-            </h5>
-            <br>
-            <br>
-            <ul class="list-group">
-                <li class="list-group-item--custom">Sino-American Pharmaceutical Professionals Association, Princeton University, NJ</li>
-                <li class="list-group-item--custom">Merrill Lynch Affinity Best Practices, Hopewell, NJ</li>
-                <li class="list-group-item--custom">Lower East Service Center, New York, NY</li>
-                <li class="list-group-item--custom">Federally Employed Women National Annual Training, Anaheim, CA and Washington D. C.</li>
-                <li class="list-group-item--custom">Residential Seminar for the Administrative Professional, Ocean City, MD</li>
-                <li class="list-group-item--custom">NJ Annual Public Purchasing Conference, Atlantic City, NJ</li>
-                <li class="list-group-item--custom">MD Education Opportunity, Baltimore, MD</li>
-            </ul>
-            <br>
-            <br>
-            <p>
-                 Eunice enjoys every opportunity to help organizations develop competent, reliable managers and powerhouse teams driven by
-                vision, mission, and purpose. She looks forward to continuing her trusted partnerships and sparking new collaborations focused
-                on inspiration and excellence.
-            </p>    
     </div>
     <br>
     <footer>
