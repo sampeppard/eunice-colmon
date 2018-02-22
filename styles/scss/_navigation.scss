@@ -133,3 +133,16 @@ a.dropdown-item {
         display: none;
     }
 }
+
+.logo-container {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+
+    img {
+        margin: 0 auto;
+        border-radius: 10px;
+        -webkit-border-radius: 10px; 
+    }
+}
