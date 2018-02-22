@@ -139,6 +139,16 @@ a.dropdown-item:hover {
     .navigation--mobile {
       display: none; } }
 
+.logo-container {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column; }
+  .logo-container img {
+    margin: 0 auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px; }
+
 .slider {
   margin-top: 0; }
   .slider .carousel-caption h3 {
@@ -154,7 +164,7 @@ a.dropdown-item:hover {
     display: none; }
   @media screen and (min-width: 576px) {
     .slider {
-      margin-top: 40px; }
+      margin-top: 149px; }
       .slider .carousel-caption h3 {
         font-size: 80px; } }
   @media screen and (min-width: 768px) {
@@ -162,6 +172,9 @@ a.dropdown-item:hover {
       display: block; }
     .slider .slider-image-mobile {
       display: none; } }
+  @media screen and (min-width: 769px) {
+    .slider {
+      margin-top: 40px; } }
 
 footer {
   position: fixed;
